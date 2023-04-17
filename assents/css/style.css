@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #ffffff
+}
+header #menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000;
+}
+header #menu li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+header #menu img{
+    height: 30px;
+    widows: 30px;
+}
+/*Area 1*/
+#apresentacao{
+    background-image: url(../media/hamburguer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+#apresentacao #apresentacao-area{
+    background-color: #3f36263a;
+    height: 200px;
+    width: 450px;
+    color: #fff;
+    padding: 10px;
+}
+#apresentacao #apresentacao-area #apresentacao-titulo{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+#apresentacao #apresentacao-area #apresentacao-desc{
+    font-size: 15px;
+}
+/*Area 2*/
+#cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardapio .introducao{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0px 0px 30px 0px;
+}
+#cardapio .opcoes ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#cardapio .opcoes ul li{
+    list-style: none;
+    padding: 1px 20px;
+    text-align: center;
+}
+#cardapio .opcoes ul li button{
+    padding: 10px 20px;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: #000000dd;
+    border-radius: 6px;
+}
+#cardapio #cardapio-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.area-hamburguer,
+.area-batata,
+.area-sobremesas,
+.area-refrigerantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#cardapio #cardapio-area .cardapio-item,
+#cardapio #cardapio-area .cardapio-item-batatas,
+#cardapio #cardapio-area .cardapio-item-sobremesas,
+#cardapio #cardapio-area .cardapio-item-refrigerantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    flex: 1;
+    margin: 20px;
+}
+.cardapio-item:hover,
+.cardapio-item-batatas:hover,
+.cardapio-item-sobremesas:hover,
+.cardapio-item-refrigerantes:hover{
+    font-style: italic;
+}
+#cardapio #cardapio-area img{
+    width: 290px;
+    height: 280px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+#cardapio #cardapio-area .cardapio-item-informacoes{
+    padding: 10px;
+}
+#cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-nome{
+    font-size: 26px;
+    padding-bottom: 16px;
+    font-weight: 600;
+}
+#cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-leva{
+    font-size: 20px;
+    padding-bottom: 22px;
+    font-weight: 600;
+}
+#cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-preco{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Area 2 itens ocultos*/
+.area-batata, .area-sobremesas, .area-refrigerantes{
+    display: none;
+}
+
+
+/*Area 3*/
+#localizacao{ 
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+}
+#localizacao .introducao{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+#localizacao .area-localizacao{
+    display: flex;
+}
+#localizacao .area-localizacao #imagem{
+    flex: 1;
+}
+#localizacao .area-localizacao #imagem img{
+    width: 550px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+#localizacao .area-localizacao #imagem-desc{
+    flex: 1;
+}
+#localizacao .area-localizacao #imagem-desc ul{
+    list-style-type: none;
+}
+#localizacao .area-localizacao #imagem-desc ul li{
+    padding: 5px;
+    font-size: 20px;
+}
+#localizacao .area-localizacao #imagem-desc ul li img{
+    padding: 0px 5px;
+    
+}
+#localizacao .area-localizacao #imagem-desc ul li a{
+    text-decoration: none;
+    color: #fff; 
+}
+#localizacao .area-localizacao #imagem-desc ul li a:hover{
+    font-style: italic;
+}
+footer{
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+@media(max-width:921px){
+    #apresentacao #apresentacao-area #apresentacao-desc {
+        font-size: 16px;
+    }
+    #cardapio #cardapio-area img{
+        width: 250px;
+        height: 240px;
+    }
+    #localizacao .area-localizacao #imagem img{
+        max-width: 400px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+}
+@media(max-width:776px){
+    #cardapio #cardapio-area img{
+        width: 200px;
+        height: 200px;
+    }
+    #cardapio .opcoes ul li button{
+        padding: 10px;
+    }
+    #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-nome{
+        font-size: 23px;
+        padding-bottom: 16px;
+        font-weight: 600;
+    }
+    #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-leva{
+        font-size: 18px;
+        padding-bottom: 22px;
+        font-weight: 600;
+    }
+    #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-preco{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    #localizacao .area-localizacao #imagem-desc ul li{
+        font-size: 16px;
+    }
+}
+@media(max-width:691px){
+    #cardapio .opcoes ul li button{
+        padding: 5px;
+    }
+    #cardapio #cardapio-area img{
+        width: 220px;
+        height: 210px;
+    }
+    
+}
+@media(max-width:426px){
+    header #menu li{
+        font-size: 25px;
+    }
+    #apresentacao #apresentacao-area{
+        height: 172px;
+        margin-bottom: 50px;
+    }
+    #apresentacao #apresentacao-area #apresentacao-titulo{
+        font-size: 24px;
+    }
+    #apresentacao #apresentacao-area #apresentacao-desc {
+        font-size: 15px;
+    }
+    #cardapio .opcoes ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #cardapio .opcoes ul li{
+        margin: 5px 10px;
+        padding: 0px;
+    }
+    #localizacao .area-localizacao{
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    #localizacao .area-localizacao #imagem img{
+        width: 350px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    @media(max-width:376px){
+        header #menu li{
+            font-size: 22px;
+        }
+        #cardapio #cardapio-area img{
+            width: 170px;
+            height: 170px;
+            border-radius: 10px;
+        }
+        #cardapio .opcoes ul li button{
+            padding: 5px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-nome{
+            font-size: 24px;
+            padding-bottom: 16px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-leva{
+            font-size: 19px;
+            padding-bottom: 22px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-preco{
+            font-size: 22px;
+        }
+        #localizacao .area-localizacao #imagem img{
+            width: 300px;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width:323px){
+        header #menu li{
+            font-size: 20px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes{
+            padding: 0px;
+            padding-left: 5px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-nome{
+            font-size: 20px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-leva{
+            font-size: 16px;
+            padding-bottom: 22px;
+        }
+        #cardapio #cardapio-area .cardapio-item-informacoes .cardapio-item-preco{
+            font-size: 20px;
+        }
+        #localizacao .area-localizacao #imagem img{
+            width: 240px;
+        }
+    }
+    @media (max-width:300px){
+        body{
+            min-width: 300px;
+        }
+    }
+}

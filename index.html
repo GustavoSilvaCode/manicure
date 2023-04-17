@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Burguer</title>
+    <link rel="stylesheet" href="assents/css/style.css">
+</head>
+<body>
+    <header>
+        <ul id="menu">
+            <li>Apaixonados por lanches</li>
+            <li><img src="assents/media/instagram.png"/></li>
+        </ul>
+    </header>
+    <section id="apresentacao">
+        <div id="apresentacao-area">
+            <div id="apresentacao-titulo">Seja bem-vindo a Apaixonados por lanches!</div>
+            <div id="apresentacao-desc">
+                Aqui você encontra os melhores lanches da cidade.<br/>
+                Nós dedicamos o máximo de esforço para fazer lanches super gostosos e agradar de nossos clientes.
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+        <div class="introducao">Cardapio</div>
+        <div class="opcoes">
+            <nav>
+                <ul>
+                    <li><button id="opcao-hamburguer" onclick="exibirHamburguer()">Hamburguer</button></li>
+                    <li><button id="opcao-batata" onclick="exibirBatatas()">Batata-frita</button></li>
+                    <li><button id="opcao-sobremesas" onclick="exibirSobremesas()">Sobremesa</button></li>
+                    <li><button id="opcao-refrigerante" onclick="exibirRefrigerantes()">Refrigerante</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="cardapio-area">
+            <!--Hamburguers-->
+            <div class="area-hamburguer">
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item">
+                    <img src="assents/media/hamburguer.jpg"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini Burguer</div>
+                        <div class="cardapio-item-leva">Pão, carne, salada</div>
+                        <div class="cardapio-item-preco">R$6,00</div>
+                    </div>
+                </div>
+            </div>
+            <!--Batata-frita-->
+            <div class="area-batata">
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-batatas">
+                    <img src="assents/media/batatas.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Mini batatas</div>
+                        <div class="cardapio-item-leva">Batata-frita e oregano</div>
+                        <div class="cardapio-item-preco">R$3,00</div>
+                    </div>
+                </div>
+            </div>
+            <!--Sobremesas-->
+            <div class="area-sobremesas">
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-sobremesas">
+                    <img src="assents/media/casquinha.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Casquinha</div>
+                        <div class="cardapio-item-leva">Sorvete de chocolate</div>
+                        <div class="cardapio-item-preco">R$2,00</div>
+                    </div>
+                </div>
+            </div>
+            <!--Refrigerantes-->
+            <div class="area-refrigerantes">
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+                <div class="cardapio-item-refrigerantes">
+                    <img src="assents/media/coca-cola.webp"/>
+                    <div class="cardapio-item-informacoes">
+                        <div class="cardapio-item-nome">Coca-Cola</div>
+                        <div class="cardapio-item-leva">Latinha de 500ml</div>
+                        <div class="cardapio-item-preco">R$5,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="localizacao">
+        <div class="introducao">Onde estamos?</div>
+        <div class="area-localizacao">
+            <div id="imagem">
+                <a href="">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/ef/8a/6d/salao-de-mesas-tematico.jpg"/>
+                </a>
+            </div>
+            <div id="imagem-desc">
+                <ul>
+                    <li><a href="https://www.google.com.br/maps/@-22.9837189,-43.2359737,15z" target="_blank"><img src="assents/images/localizacao.png"/>Rua dos lances - 001 - Rio de Janeiro</li></a>
+                    <li><img src="assents/images/telefone.png"/>21 99192-8182</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Página desenvolvida por Gustavo Silva.
+    </footer>
+    <script src="assents/js/script.js"></script>
+</body>
+</html>
+
+<!--Apresentação-->
+<!--Cardapio-->
+<!--Navegacao entre cardapios-->
+<!--Localização-->
+<!--Seja bem-vindo a Geraldas!
+        Aqui você encontra os melhores lanches da cidade.
+        Nós dedicamos o máximo de esforço para satisfazer o apetite de nossos clientes-->
